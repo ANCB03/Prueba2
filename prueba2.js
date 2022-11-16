@@ -57,11 +57,8 @@ function validarEdad(personas) {
   Persona.prototype.mayor_de_edad = null;
   const cloneArr = personas;
   for (var i = 0; i < cloneArr.length; i++) {
-    if (cloneArr[i].edad >= 18) {
-      cloneArr[i].mayor_de_edad = true;
-    } else {
-      cloneArr[i].mayor_de_edad = false;
-    }
+    
+    cloneArr[i].edad >= 18 ?  true : false;
   }
   console.log(cloneArr[0]);
 }
